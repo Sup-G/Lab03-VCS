@@ -30,4 +30,8 @@ public class Sorter {
             array[i + 1] = key;
         }
     }
+
+    public static void sort(int[] array) {
+        insertionSort(array);
+    }
 }
