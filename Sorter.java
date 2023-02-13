@@ -1,6 +1,6 @@
 public class Sorter{
 
-    void selectionSort(int arr[]) {
+    public static void selectionSort(int arr[]) {
         int n = arr.length;
 
         for (int i = 0; i < n-1; i++)
@@ -15,8 +15,12 @@ public class Sorter{
             int temp = arr[min_idx];
             arr[min_idx] = arr[i];
             arr[i] = temp;
-            
+
         }
+    }
+
+     static void sort(int[] array){
+        selectionSort(array);
     }
 }
 
